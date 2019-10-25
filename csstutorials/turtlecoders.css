@@ -1,0 +1,76 @@
+body{
+  background-color: #ffffcc;
+  }
+h1,h2{
+  color:#333333;
+  font-family: serif;
+  padding-left: 20px;
+}
+p{
+  font-family: sans-serif;
+  padding-left:20px;
+  padding-right:10px;
+}
+li{
+  font-family: sans-serif;
+}
+.company_name{
+  font-weight: bold;
+}
+#intro{
+  text-indent: 35px;
+  padding-left:10px;
+  padding-right:10px;
+}
+#services{
+  line-height: 1.5;
+ }
+ul{
+  padding-left:60px;
+ }
+header{
+  background-color: #ccff99;
+  text-align: center;
+  color: #333333;
+  text-shadow: 3px 3px grey;
+  border-radius: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-color: black;
+  border-style: solid;
+ }
+nav{
+  text-indent: 20px;
+  margin-top: -5px;
+}
+
+nav a{
+  font-weight:bold;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333333;
+  background-color: #ccff99;
+  border: 1px;
+  border-color: black;
+  border-style: solid;
+  padding:5px;
+}
+p.motto{
+  font-style: italic;
+  text-align: center;
+  border-color: #99aa33;
+  border-style:ridge;
+  border-width: 10px 10px 10px 40px;
+  margin-left:20px;
+  margin-right:20px;
+ }
+
+#wrapper{
+  width: 80%;
+  height:100%;
+  margin:auto;
+  background-color: white;
+  border-radius: 15px;
+
+}
+ 

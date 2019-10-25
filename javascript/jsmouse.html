@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>JC's Website</title>
+ <meta charset="UTF-8">
+ <meta name="description" content="This is the website about me">
+ <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+ <meta name="author" content="Jiancong Liang">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" type="text/css" href="../csci445.css" />
+</head>
+<body>
+ <div id="wrapper">
+
+ <h1>JC's CSCI445 Website</h1>
+ <hr>
+ <nav id="menu_dropdown">
+  <a href="../index.html">Home</a>
+  <a href="../aboutme/aboutme.html">About Me</a>
+  <div class="dropdown">
+  <span>CSS Tutorials</span>
+  <div class="dropdown-content">
+      <a href="../csstutorials/turtlecoders.html">Turtle Coders</a>
+      <a href="../csstutorials/posEx.html">Position Example</a>
+      <a href="../csstutorials/floatExBoxes.html">The Box Model</a>
+      <a href="../csstutorials/clearEx.html">Float and Clear</a>
+  </div>
+  </div>
+  <div class="dropdown">
+  <span>JavaScript</span>
+  <div class="dropdown-content">
+      <a href="jskeyboard.html">JSKeyboard Game</a>
+      <a href="#">JSMouse Game</a>
+  </div>
+  </div>
+  
+    <a href="../jquery/quiz.html">jQuery</a>
+
+ </nav>
+ <hr>
+ <section>
+   <h2>JSMouse Game</h2>
+    <article id="game_header">
+      <h4>Drawing & Mouse Events</h4>
+    </article>
+      <canvas id="graphCanvas" >
+      </canvas>
+      <button id="exprBtn" onclick="exprFunction()">Make me Sad</button>
+      <script src="jsmouse.js"></script>
+ </section>
+ <div class="description">
+   <h2>Description</h2>
+   <p>Please click the face or the button to see some changes!</p>
+ </div>
+</div>
+<footer>
+<p>&#169; Copy right 2019 Jiancong Liang - My school email address <a href="mailto:jiancongliang@mymail.mines.com">jiancongliang@mymail.mines.com</a></p>
+</footer>
+<div class="validation_image">
+      <img src="../images/css.png" alt="css's picture">
+      <img src="../images/html5.png" alt="html5's picture">
+      <img src="../images/wcag2A.png" alt="wcag2A's picture">
+  </div>
+</body>
+
+</html>

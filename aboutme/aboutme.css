@@ -1,0 +1,317 @@
+
+body{
+  background-color: green;
+}
+
+*{
+  margin: 0px auto;
+  padding: 0px;
+}
+
+section{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+nav a{
+  font-size:2vw;
+  text-decoration: none;
+  padding-left: 10px;
+  border-radius: 15px;
+  border-color: blue;
+  padding:10px;
+  margin:10px;
+  color:blue;
+  border-style: solid;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-size:2vw;
+  text-decoration: none;
+  padding-left: 10px;
+  border-radius: 15px;
+  border-color: blue;
+  padding:10px;
+  margin:10px;
+  color:blue;
+  border-style: solid;
+}
+
+nav a[href="#"]{
+  font-size:2vw;
+  text-decoration: none;
+  padding-left: 10px;
+  border-radius: 15px;
+  border-color: red;
+  padding:10px;
+  margin:10px;
+  color:red;
+  border-style: solid;
+  background-color: yellow;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  margin-top:10px;
+  min-width: 160px;
+  box-shadow: 5px 10px #888888;
+  z-index: 1;
+  border-radius: 15px;
+  border-color: green;
+  border-style: solid;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: white;
+  color:blue;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.dropdown-content a:hover {
+  background-color: blue;
+  color:white;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover, nav a:hover{
+  background-color: blue;
+  color:white;
+}
+
+#wrapper{
+  width: 95%;
+  height:100%;
+  margin:auto;
+  background-color: white;
+  background-image: url("../images/bg.jpg");
+  border-radius: 15px;
+  overflow: auto;
+
+ }
+
+h1{
+  text-align: center;
+  background-image: linear-gradient(red, yellow);
+  font-size: 7vw;
+  color:green;
+   padding:30px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px
+}
+
+h2{
+  text-align: center;
+  font-size: 6vw;
+  color:blue;
+  margin-top: 20px;
+}
+
+h3{
+  text-align: center;
+  font-size: 4vw;
+  margin-top: 1.5vw;
+}
+
+p{
+  font-size: 2vw;
+  color:green;
+ }
+
+.quote{
+  text-align: center;
+}
+
+footer{
+  background-color: black;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+footer p{
+  font-size: 2vw;
+  color:white;
+ }
+
+code,pre{
+   font-size:1.6vw;
+}
+
+hr{
+  border: 5px solid green;
+}
+
+#selfie, #mj{
+  border-radius: 8px;
+  width: 200px;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+ol{
+  font-size:2vw;
+  color:green ;
+}
+.separate_row> p{
+  font-size: 2vw;
+}
+
+#favourite_teams caption{
+  font-size: 36px;
+  color: black;
+  font-family: serif;
+  font-weight: bold;
+}
+
+#Houston_stat caption{
+  font-size: 36px;
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+#player_stat caption{
+  font-size: 36px;
+  color: black;
+  font-family: Monospace;
+  font-weight: bold;
+}
+
+
+/* Include a solid border around the table and between cells */
+#favourite_teams, #Houston_stat, #player_stat{
+   border-collapse: collapse;
+   text-align:center;
+   margin-bottom:50px;
+
+}
+
+ td{
+  border-top-style: dashed;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-color: black;
+  font-size: 2vw;
+}
+/* Use a dashed bottom border for the td elements. Do not include a bottom border on the last row of the tbody element (hint: use last-of-type pseudo-class) */
+
+ #favourite_teams tbody tr:last-of-type {
+  border-bottom-style: solid;
+  border-color: black;
+  font-size: 2vw;
+
+ }
+
+/* Use a background color for the header with a complementary font color */
+#favourite_teams th{
+  background-color:green;
+  color: red;
+  border-collapse: collapse;
+  border-style: solid;
+  border-color: black;
+  font-size: 2vw;
+}
+
+/* Header and footer of a single table are different colors (background & text) */
+#favourite_teams tbody tr:last-of-type{
+  background-color:yellow;
+  color: purple;
+  font-weight: bold;
+}
+
+
+/*
+Houston_stat table
+*/
+#Houston_stat th{
+  border-collapse: collapse;
+  border-style: solid;
+  border-color: black;
+  font-size: 2vw;
+
+}
+#Houston_stat tbody tr:nth-of-type(odd) {
+  background: yellow;
+  font-size: 2vw;
+}
+
+#Houston_stat tbody tr:nth-of-type(even) {
+  background: pink;
+  font-size: 2vw;
+}
+
+#Houston_stat tfoot>tr{
+  border-top-style:   dashed;
+  border-bottom-style: solid;
+  background: pink;
+  border-color: black;
+  font-size: 2vw;
+
+}
+
+/*
+player stats
+*/
+#player_stat table,#player_stat th,#player_stat td{
+  border: solid black;
+  border-collapse: collapse;
+    font-size: 2vw;
+
+}
+
+/* Style each of the following pseudo-classes differently */
+
+a[href="#basketball_player"]:link {
+  color: yellow;
+}
+
+a[href="#algirithm"]:visited {
+  color: orange;
+}
+
+a[href="#moba_game"]:active {
+  color: red;
+}
+
+ a[href="https://github.com/jcliang001"]:hover {
+  color: #FF00FF;
+}
+
+/* Use at least one pseudo-element */
+h3:first-letter {
+  color: red;
+ }
+
+@media only screen and (max-width: 480px) {
+  nav a, nav a[href="#"],.dropdown {
+     display: block;
+     text-align: center;
+     font-size:6vw;
+  }
+}
+.validation_image {
+    text-align: center;
+}
+
+.validation_image img{
+  display:inline-block;
+  max-width: 80px;
+  max-height:60px;
+}

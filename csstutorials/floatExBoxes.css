@@ -1,0 +1,42 @@
+.big-letter{
+	font-style: italic;
+	font-size: 350%;
+	line-height: 0.5;
+ }
+.outer{
+	border: 3px dashed black;
+ 	background: #05cbf2;
+ 	width: 194px;
+ 	height: 194px;
+ }
+ 
+.inner1{
+ 	border: 3px dashed;
+ 	background: white;
+ 	width: 34px;
+ 	height: 34px;  
+ 	float:right;
+ 	margin:10px;
+ 	padding:20px;
+ } /*the content is overflow, so we need to replace the ideal width and height with the calculated width and height*/
+
+.inner2{
+	border: 3px dashed;
+ 	background: white;
+ 	width: 74px; /*100-6-20: it doesn't include the margin*/ 
+ 	height: 74px; 
+ 	float:left;
+ 	margin:10px;
+ 	padding:10px;
+  }
+
+.inner3{
+	border: 3px dashed;
+ 	background: white;
+ 	width: 94px;
+ 	height: 94px;
+ 	float:right;
+ 	margin-top:40px;
+ 	margin-right:0px;
+ 	padding:0px;
+}

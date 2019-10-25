@@ -1,0 +1,25 @@
+#turtle_left{
+	float: left;
+	border: 2px solid blue;
+	background-color: yellow;
+
+  }
+ #turtle_left~p{
+ 	padding-bottom: 55px;
+ }
+.div3{
+	background-color: yellow;
+ }
+#cat_right{
+	float:right;
+	border: 2px solid black;
+}
+.div4{
+	background-color: purple;
+ 	padding-top:20px;
+ 	padding-bottom:30px; 
+ 	margin-top:50px;
+}
+.clear-it{
+	clear: both;
+}

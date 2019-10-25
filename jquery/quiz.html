@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>JC's Website</title>
+ <meta charset="UTF-8">
+ <meta name="description" content="This is the website about me">
+ <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+ <meta name="author" content="Jiancong Liang">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" type="text/css" href="../csci445.css" />
+</head>
+<body>
+ <div id="wrapper">
+
+ <h1>Basketball Quiz</h1>
+ <hr>
+ <nav id="menu_dropdown">
+  <a href="../index.html">Home</a>
+  <a href="../aboutme/aboutme.html">About Me</a>
+  <div class="dropdown">
+  <span>CSS Tutorials</span>
+  <div class="dropdown-content">
+      <a href="../csstutorials/turtlecoders.html">Turtle Coders</a>
+      <a href="../csstutorials/posEx.html">Position Example</a>
+      <a href="../csstutorials/floatExBoxes.html">The Box Model</a>
+      <a href="../csstutorials/clearEx.html">Float and Clear</a>
+  </div>
+  </div>
+  <div class="dropdown">
+  <span>JavaScript</span>
+  <div class="dropdown-content">
+      <a href="../javascript/jskeyboard.html">JSKeyboard Game</a>
+      <a href="../javascript/jsmouse.html">JSMouse Game</a>
+  </div>
+  </div>
+      <a href="#">jQuery</a>
+ </nav>
+ <hr>
+
+  <aside id="type_history">
+       <h4>Question History</h4>
+       <p id="question_list1"></p>
+       <p id="question_list2"></p>
+       <p id="question_list3"></p>
+       <p id="question_list4"></p>
+  </aside> 
+
+  <section>
+    <h3>Question</h3>
+     
+    <div id="display_question">
+      <p id="question_prompt_hint"></p>
+   </div>
+    <div id="end_section">
+      <p id="end_words"></p>
+    </div>
+  </section>
+  
+
+ <section>
+   <h3>Answer</h3>
+   <div id="answer_section">
+
+  <form id="simiple_version">
+  <label for="choice1" id="label1">true</label>
+  <input class="radio_btn" type="radio" name="question" id="choice1" value="true"><br>
+  <label for="choice2" id="label2">false</label>
+  <input class="radio_btn" type="radio" name="question" id="choice2" value="false"><br>
+
+  <label for="choice3" id="label3">choice3</label>
+  <input class="radio_btn" type="radio" name="question" id="choice3"><br>
+  <label for="choice4" id="label4">choice4</label>
+  <input class="radio_btn" type="radio" name="question" id="choice4"><br>
+  </form>
+ 
+
+    <input id="check_ans_btn" type="button" value="check answer" /> 
+   </div>
+  </section>
+
+  <section>
+    <div id="score_section">
+      <h4 id="score">Scores: 0/4(0%)</h4>
+   </div>
+  </section>
+
+ <nav id="example">
+  <a id="q1">NBA Team</a>
+  <a id="q2">2019 Champion</a>
+  <a id="q3">Denver Team</a>
+  <a id="q4">Legend</a>
+
+ </nav>
+
+</div>
+
+<footer>
+<p>&#169; Copy right 2019 Jiancong Liang - My school email address <a href="mailto:jiancongliang@mymail.mines.com">jiancongliang@mymail.mines.com</a></p>
+</footer>
+  <div class="validation_image">
+      <img src="../images/css.png" alt="css's picture">
+      <img src="../images/html5.png" alt="html5's picture">
+      <img src="../images/wcag2A.png" alt="wcag2A's picture">
+  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" ></script>
+
+      <script src="quiz.js"></script>
+
+</body>
+
+</html>

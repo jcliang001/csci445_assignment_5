@@ -1,0 +1,55 @@
+h1{
+	position: relative;
+ 	margin-left: 80px;
+	margin-top:15px;
+ }
+#sidebar + p{
+ 	padding-left:5px;
+ 	top:50px; /*adjust the position regarding to the web browser*/
+ }
+#sidebar{
+	position: fixed;
+	width: 80px;
+	border: solid 6px;
+	color: #fff;
+	background: #05cbf2;
+ 	top:30px;
+}
+.important{
+	position: absolute;  /*is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).*/
+	right: 160px;
+	top: 100px;
+ 	width:160px;
+	height: 100px;
+	border: solid 6px;
+	color: black;
+	background: yellow;
+	overflow: auto;
+}
+.not-important{
+	float:left;
+	width:120px;
+	height: 85px;
+	border: solid 6px;
+	color: black;
+	background: red;
+	margin-top:35px;
+	overflow: hidden;
+ }
+ .more-important{
+ 	position: relative;
+	float:left;
+	margin-left: -35px;
+	margin-top:85px;
+	width:220px;
+	height: 90px;
+	border: solid 6px;
+	color: black;
+	background: #cc1db2;
+	z-index: -1;
+ }
+.more-important + p{
+	padding-top: 220px;
+}
+
+ 

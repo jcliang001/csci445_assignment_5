@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>JC's Website</title>
+ <meta charset="UTF-8">
+ <meta name="description" content="This is the website about me">
+ <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+ <meta name="author" content="Jiancong Liang">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" type="text/css" href="aboutme.css" />
+</head>
+
+<body>
+ <div id="wrapper">
+ <h1>Welcome</h1>
+ <hr>
+ <nav>
+  <a href="../index.html">Home</a>
+  <a href="#">About Me</a>
+  <div class="dropdown">
+  <span>CSS Tutorials</span>
+  <div class="dropdown-content">
+      <a href="../csstutorials/turtlecoders.html">Turtle Coders</a>
+      <a href="../csstutorials/posEx.html">Position Example</a>
+      <a href="../csstutorials/floatExBoxes.html">The Box Model</a>
+      <a href="../csstutorials/clearEx.html">Float and Clear</a>
+  </div>
+  </div>
+
+  <div class="dropdown">
+  <span>JavaScript</span>
+  <div class="dropdown-content">
+      <a href="../javascript/jskeyboard.html">JSKeyboard Game</a>
+      <a href="../javascript/jsmouse.html">JSMouse Game</a>
+  </div>
+  </div>
+  <a href="../jquery/quiz.html">jQuery</a>
+
+ </nav>
+<hr>
+ <section>
+  <h2>JC's Introduction</h2>
+  <p > My name is Jiancong Liang. <mark><abbr title="Also Known As">A.K.A</abbr></mark> is JC. I am a senior student in computer science. My favourite programming language is Java. For the expectation of this class, I want to get more familiar with html, javaScript and Css. If you want to know more about my projects, <a href="https://github.com/jcliang001">welcome to visit my github project. </a> Besides school work, I really love playing basketball and playing some moba games online. Now you are geting familiar with me. I will ask you a couple questions about me. You can click "check" button if you want to see the answer. Ready? Let's start it.</p>
+  <img id="selfie" src="../images/selfie.jpg" alt="JC's picture" >
+ </section>
+ <hr>
+ <section>
+  <h2>More about me</h2>
+    <ol> <!-- <a>is not the child tag of <ol>  -->
+      <li>Who is my favourite basketball player? <a href="#basketball_player">check</a></li>
+      <li>Which search algorithm do I oftenly use? <a href="#algirithm">check</a></li>
+      <li>Which moba game do I always play? <a href="#moba_game">check</a></li>
+    </ol>
+
+  <article>
+    <h3>My favourite online game</h3>
+    <p id="moba_game">Defense of the Ancients
+Defense of the Ancients (DotA) is a multiplayer online battle arena (MOBA) mod for the video game Warcraft III: Reign of Chaos and its expansion, The Frozen Throne.</p>
+  </article>
+
+  <article>
+    <h3>My favourite search algorithm</h3>
+    <pre id="algirithm">
+      <code>
+int binarySearch(int arr[], int l, int r, int x)
+  {
+    if (r >= l) {
+        int mid = l + (r - l) / 2;
+
+        if (arr[mid] == x)
+            return mid;
+        if (arr[mid] > x)
+            return binarySearch(arr, l, mid - 1, x);
+        return binarySearch(arr, mid + 1, r, x);
+    }
+    return -1;
+  }
+</code>
+</pre>
+  </article>
+
+  <article>
+    <h3>My basketbal idol</h3>
+     <img id = "mj" src="../images/mj.jpg" alt="MJ's picture" width=60 height=40>
+    <p class="quote">I can accept failure, but I can't accept not trying.  ---Michael Jordan</p>
+  </article>
+ </section>
+
+ <hr>
+
+ <section>
+  <h2>NBA channel</h2>
+  <article>
+    <h3>My favourtie teams</h3>
+    <table id="favourite_teams" style="width:100%">
+        <thead>
+          <tr>
+            <th>Team Name</th>
+            <th>Location</th>
+            <th>Championships</th>
+            <th>Founded</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>Bulls</td>
+              <td>Chicago, Illinois</td>
+              <td>6</td>
+              <td>1966</td>
+             </tr>
+            <tr>
+              <td>Spurs</td>
+              <td>San Antonio</td>
+              <td>5</td>
+              <td>1967</td>
+            </tr>
+            <tr>
+              <td>Rockets</td>
+              <td>Houston </td>
+              <td>2</td>
+              <td>1967</td>
+            </tr>
+            <tr>
+              <td colspan="4">Total Championships: 13</td>
+            </tr>
+      </tbody>
+    </table>
+  </article>
+
+  <article>
+    <h3>My favourite team statistics</h3>
+    <table id="Houston_stat" style="width:100%">
+      <thead>
+        <tr>
+          <th>Season</th>
+          <th>Game plays</th>
+          <th>W</th>
+          <th>L</th>
+          <th>%</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2016-2017</td>
+          <td>82</td>
+          <td>55</td>
+          <td>27</td>
+          <td>.671</td>
+         </tr>
+        <tr>
+          <td>2017-2018</td>
+          <td>82</td>
+          <td>65</td>
+          <td>17</td>
+          <td>.793</td>
+        </tr>
+        <tr>
+          <td>2018-2019</td>
+          <td>82</td>
+          <td>53</td>
+          <td>29</td>
+          <td>.646</td>
+        </tr>
+      </tbody>
+      <tfoot>
+          <tr>
+            <td>Sum</td>
+            <td>246</td>
+            <td>173</td>
+            <td>73</td>
+            <td>.703</td>
+          </tr>
+      </tfoot>
+    </table>
+  </article>
+
+  <article>
+    <h3>Tracy McGrady statistics</h3>
+    <table id="player_stat" style="width:100%">
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>team</th>
+          <th>Game plays</th>
+          <th>Points per game</th>
+          <th>Player jersey</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2004-2005</td>
+          <td>Houston</td>
+          <td>55</td>
+          <td>25.7</td>
+          <td rowspan="2">#1</td>
+         </tr>
+        <tr>
+          <td>2005-2006</td>
+          <td>Houston</td>
+          <td>65</td>
+          <td>24.4</td>
+        </tr>
+      </tbody>
+     </table>
+  </article>
+ </section>
+
+<hr>
+
+</div>
+<footer>
+ <p>&#169; Copy right 2019 Jiancong Liang - My school email address <a href="mailto:jiancongliang@mymail.mines.com">jiancongliang@mymail.mines.com</a></p>
+</footer>
+   <div class="validation_image">
+      <img src="../images/css.png" alt="css's picture">
+      <img src="../images/html5.png" alt="html5's picture">
+      <img src="../images/wcag2A.png" alt="wcag2A's picture">
+  </div>
+</body>
+</html>
